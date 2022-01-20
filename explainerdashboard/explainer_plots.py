@@ -1160,6 +1160,7 @@ def plotly_pdp(pdp_df,
                 )
 
     fig.update_layout(annotations=annotations)
+    fig.update_xaxes(automargin=True)
     fig.update_layout(shapes=shapes)
     fig.update_layout(showlegend=False)
     fig.update_layout(margin=dict(t=40, b=40, l=40, r=40))
